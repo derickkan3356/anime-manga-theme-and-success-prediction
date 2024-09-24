@@ -2,10 +2,12 @@
 current options:
 1. reviewNB
    
+   https://app.reviewnb.com/derickkan3356/696/
+   
    better diff interface, but only available after commit
    ![image](https://github.com/user-attachments/assets/ebd860cd-6195-470d-a1db-4ad93aed8aa2)
 
-2. nbdime
+3. nbdime
 
    `pip install nbdime`
    
