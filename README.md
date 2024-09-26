@@ -1,3 +1,21 @@
+### Project Timeline
+
+Ideally, the tasks with same stage can be done parallel.
+
+| Stage | Task | Assign to |
+| --- | --- | --- |
+| 1 | Data cleaning, merging | Derick |
+| 2 | Text processing | Derick |
+| 2 | Normalization, One hot encoding, format consistent | Hinson |
+| 3 | Topic modeling | Derick |
+| 3 | Clustering | Hinson |
+| 4 | Interpret topic modelling result | Both |
+| 5 | Clustering (continue with topic modelling result) | Hinson |
+| 6 | Predict popularity, score (traditional model) | Hinson |
+| 6 | Predict popularity, score (deep learning) | Derick |
+| 7 | Compare model and extract feature importance | Both |
+| 7 | Forecast trend | if time sufficient |
+
 ### How to get update from github
 
 click the fetch button
