@@ -1,3 +1,16 @@
+### How to get update from github
+
+click the fetch button
+
+![image](https://github.com/user-attachments/assets/cbcb280c-ed41-42eb-9140-cdcf0af06c0c)
+
+A new commit will show up in the source control graph if it has new update.
+
+Then, click sync change.
+
+![image](https://github.com/user-attachments/assets/f4226f8e-9c7d-488f-bed2-0f4d64134d97)
+
+
 ### How to view diffs
 
 - view diffs for current commit (before you push):
