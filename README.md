@@ -1,19 +1,20 @@
-### version control notes
-current options:
-1. reviewNB
-   
-   https://app.reviewnb.com/derickkan3356/696/
-   
-   better diff interface, but only available after commit
-   ![image](https://github.com/user-attachments/assets/ebd860cd-6195-470d-a1db-4ad93aed8aa2)
+### How to view diffs
 
-3. nbdime
+- view diffs for current commit (before you push):
+  
+  In VScode, save the notebook and click the arrow surround button
+  
+  ![image](https://github.com/user-attachments/assets/172f5f35-2f4b-44a0-bbe8-3e56236cd402)
+  
+  ![image](https://github.com/user-attachments/assets/c400e61e-e712-4628-a5c6-e61cc7b53af1)
 
-   `pip install nbdime`
-   
-   `nbdime config-git --enable`
-   
-   `nbdiff-web`
-   
-   can view diff before commit
-   ![image](https://github.com/user-attachments/assets/a36e98c6-7646-4b38-808c-443a532c4fe2)
+- view diffs for all previous commit:
+  
+  VScode don't have good support for viewing jupyter diffs 
+  ![image](https://github.com/user-attachments/assets/23d5329d-9dfb-4dc2-a988-06f1b86c6295)
+
+  So, use third party website, provide user friendly view:
+  https://app.reviewnb.com/derickkan3356/696/
+  ![image](https://github.com/user-attachments/assets/ebd860cd-6195-470d-a1db-4ad93aed8aa2)
+
+
