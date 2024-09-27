@@ -48,6 +48,8 @@ Export to the `requirements.txt`:
 ```bash
 pip freeze > requirements.txt
 ```
+If your code require downloaded model, add the download command near that block.
+![image](./readme_pic/789.png)
 
 ## 3. Notes
 `env696` folder is created under the project folder, but it will not upload to github, as I include `.gitignore` to tell git to ignore this folder.
