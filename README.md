@@ -80,13 +80,13 @@ Ideally, the tasks with same stage can be done parallel.
 
 click the fetch button
 
-![image](https://github.com/user-attachments/assets/cbcb280c-ed41-42eb-9140-cdcf0af06c0c)
+![image](./readme_pic/111.png)
 
 A new commit will show up in the source control graph if it has new update.
 
 Then, click sync change.
 
-![image](https://github.com/user-attachments/assets/f4226f8e-9c7d-488f-bed2-0f4d64134d97)
+![image](./readme_pic/222.png)
 
 
 ### How to view diffs
@@ -95,17 +95,17 @@ Then, click sync change.
   
   In VScode, save the notebook and click the arrow surround button
   
-  ![image](https://github.com/user-attachments/assets/172f5f35-2f4b-44a0-bbe8-3e56236cd402)
+  ![image](./readme_pic/333.png)
   
-  ![image](https://github.com/user-attachments/assets/c400e61e-e712-4628-a5c6-e61cc7b53af1)
+  ![image](./readme_pic/444.png)
 
 - view diffs for all previous commit:
   
   VScode don't have good support for viewing jupyter diffs 
-  ![image](https://github.com/user-attachments/assets/23d5329d-9dfb-4dc2-a988-06f1b86c6295)
+  ![image](./readme_pic/555.png)
 
   So, use third party website, provide user friendly view:
   https://app.reviewnb.com/derickkan3356/696/
-  ![image](https://github.com/user-attachments/assets/ebd860cd-6195-470d-a1db-4ad93aed8aa2)
+  ![image](./readme_pic/666.png)
 
 
