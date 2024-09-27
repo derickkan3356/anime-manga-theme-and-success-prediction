@@ -76,7 +76,7 @@ Ideally, the tasks with same stage can be done parallel.
 | 7 | Compare model and extract feature importance | Both |
 | 7 | Forecast trend | if time sufficient |
 
-### How to get update from github
+# How to get update from github
 
 click the fetch button
 
@@ -89,7 +89,7 @@ Then, click sync change.
 ![image](./readme_pic/222.png)
 
 
-### How to view diffs
+# How to view diffs
 
 - view diffs for current commit (before you push):
   
