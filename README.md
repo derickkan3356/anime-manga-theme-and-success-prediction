@@ -78,16 +78,21 @@ Ideally, the tasks with same stage can be done parallel.
 
 # How to get update from github
 
-click the fetch button
+If you have made any changes that not yet commit, which means there is an 'M' near the file name,
 
-![image](./readme_pic/111.png)
+![image](./readme_pic/888.png)
 
-A new commit will show up in the source control graph if it has new update.
+you need to stash your changes first. 'Stash' means you create a temporary place to hold your changes, so that the changes you are pulling will not conflict with your current changes.
 
-Then, click sync change.
+![image](./readme_pic/777.png)
 
-![image](./readme_pic/222.png)
+Once your files are cleaned to pull, click the pull button
 
+![image](./readme_pic/999.png)
+
+If you have stashed your changes, you can get back those changes by the 'pop latest stash'
+
+![image](./readme_pic/147.png)
 
 # How to view diffs
 
