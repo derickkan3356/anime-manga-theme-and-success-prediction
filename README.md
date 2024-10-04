@@ -1,16 +1,3 @@
-# git LFS
-This is to work with large file in github.
-**Setup:**
-1. Download from this: https://git-lfs.com/
-2. In terminal, run these two commands in the project directory.
-```bash
-git lfs install
-```
-```bash
-git lfs pull
-```
-After this set up, all operation will remain the same.
-
 # Virtual Environment Setup Guide
 
 This guide explains how to set up a virtual environment, install necessary libraries, and keep the environment up to date using `requirements.txt`.
