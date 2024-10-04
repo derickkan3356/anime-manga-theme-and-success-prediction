@@ -1,3 +1,2 @@
 *.ipynb	diff=jupyternotebook
 *.ipynb	merge=jupyternotebook
-*.joblib filter=lfs diff=lfs merge=lfs -text
