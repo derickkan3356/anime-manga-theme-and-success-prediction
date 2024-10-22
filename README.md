@@ -1,116 +1,26 @@
-# Virtual Environment Setup Guide
+# Anime & Manga Success Prediction Project
 
-This guide explains how to set up a virtual environment, install necessary libraries, and keep the environment up to date using `requirements.txt`.
+## Overview
+This project aims to explore the factors that influence the success of anime and manga using machine learning techniques. The dataset is obtained from MyAnimeList and includes user ratings, synopses, titles, and other features. The analysis involves both unsupervised and supervised learning to derive thematic labels and predict user-rated scores.
 
-## **1. Initial Setup**
+### Key Objectives:
+- Use **unsupervised learning** to derive a single thematic label for anime and manga titles.
+- Use **supervised learning** to predict the user scores based on various features, including those derived from topic modeling.
 
-### 1.1 Create the Virtual Environment
-In VS code, press ctrl + ` to open a terminal. Make sure you are in your project directory.
+## Project Structure
+The project is divided into the following major sections:
 
-Run:
-```bash
-python -m venv env696
-```
-### 1.2 Activate the Virtual Environment
-```bash
-env696\Scripts\activate
-```
-### 1.3 Install Required Libraries
-Use the requirements.txt file to install libraries:
-```bash
-pip install -r requirements.txt
-```
-## **2. Working with the Virtual Environment in VScode Jupyter**
-### 2.1 Every Time You Start Working
-Activate the virtual environment in VScode jupyter:
+1. **Data Source and Feature Engineering**: Pre-process the dataset to combine anime and manga data, handle missing values, and engineer useful features for the model.
 
-Press this button:
+2. **Unsupervised Learning**: Use **BERTopic** and other topic modeling approaches to derive a single theme for each title. This step also involves evaluating and tuning hyperparameters to optimize topic coherence.
 
-![image](./readme_pic/123.png)
+3. **Supervised Learning**: Train a neural network to predict user scores. We utilized various techniques such as **embedding layers**, **cross-validation**, **Optuna hyperparameter tuning**, and **early stopping** to ensure robustness.
 
-Change to `env696`:
+4. **Evaluation and Analysis**: Analyze residuals, feature importances, hyperparameter sensitivity, and learning curves to gain insights into model performance.
 
-![image](./readme_pic/456.png)
+## Results
+- **Unsupervised Learning**: Derived 9 distinct themes, including **'High School Life and Romance'** and **'Fantasy Adventure / Isekai (alternate world)'**, reflecting popular genres in the dataset.
+- **Supervised Learning**: Achieved an RMSE of **0.626** for user score prediction, demonstrating the model's effectiveness in understanding user ratings.
 
-Verify activation by running this in jupyter:
-```bash
-!where python
-```
-The first path should be within `env696`.
-### 2.2 When There Are Changes to `requirements.txt`
-Run:
-```bash
-pip install -r requirements.txt
-```
-
-### 2.3 Every Time You Install or Update a Library
-Export to the `requirements.txt`:
-```bash
-pip freeze > requirements.txt
-```
-If your code require downloaded model, add the download command near that block.
-![image](./readme_pic/789.png)
-
-## 3. Notes
-`env696` folder is created under the project folder, but it will not upload to github, as I include `.gitignore` to tell git to ignore this folder.
-
-If you encounter any issues or want to start fresh:
-1. Manually delete the `env696` folder.
-2. Recreate the environment by following step 1 again.
-
-# Project Timeline
-
-Ideally, the tasks with same stage can be done parallel.
-
-| Stage | Task | Assign to |
-| --- | --- | --- |
-| 1 | Data cleaning, merging | Derick |
-| 2 | Text processing | Derick |
-| 2 | Normalization, One hot encoding, format consistent | Hinson |
-| 3 | Topic modeling | Derick |
-| 3 | Clustering | Hinson |
-| 4 | Interpret topic modelling result | Both |
-| 5 | Clustering (continue with topic modelling result) | Hinson |
-| 6 | Predict popularity, score (traditional model) | Hinson |
-| 6 | Predict popularity, score (deep learning) | Derick |
-| 7 | Compare model and extract feature importance | Both |
-| 7 | Forecast trend | if time sufficient |
-
-# How to get update from github
-
-If you have made any changes that not yet commit, which means there is an 'M' near the file name,
-
-![image](./readme_pic/888.png)
-
-you need to stash your changes first. 'Stash' means you create a temporary place to hold your changes, so that the changes you are pulling will not conflict with your current changes.
-
-![image](./readme_pic/777.png)
-
-Once your files are cleaned to pull, click the pull button
-
-![image](./readme_pic/999.png)
-
-If you have stashed your changes, you can get back those changes by the 'pop latest stash'
-
-![image](./readme_pic/147.png)
-
-# How to view diffs
-
-- view diffs for current commit (before you push):
-  
-  In VScode, save the notebook and click the arrow surround button
-  
-  ![image](./readme_pic/333.png)
-  
-  ![image](./readme_pic/444.png)
-
-- view diffs for all previous commit:
-  
-  VScode don't have good support for viewing jupyter diffs 
-  ![image](./readme_pic/555.png)
-
-  So, use third party website, provide user friendly view:
-  https://app.reviewnb.com/derickkan3356/696/
-  ![image](./readme_pic/666.png)
-
-
+## Requirements
+Please refer to `requirements.txt` for a full list of dependencies.
