@@ -124,16 +124,19 @@ Since the titles and synopses serve distinct purposes—titles being concise and
 After the text pre-processing step, we implemented three different topic modeling approaches: **TF-IDF + LDA**, **Word2Vec + NMF**, and **BERT + BERTopic**. Although we expanded our custom stop word list by evaluating previous topic modeling results, both LDA and NMF still struggled to generate useful top terms.
 
 *Top terms for topic 8 by LDA*
+
 ![Top terms for topic 8 by LDA](./readme_pic/LDA_result.png)
 
 For LDA, for example, Topic 8 in the intertopic distance map included terms like "song," "summer," and "island," which do not share a coherent thematic meaning, making it difficult to derive a clear theme.
 
 *Top terms for topic 5 by MNF*
+
 ![Top terms for topic 5 by MNF](./readme_pic/top_term_NMF.png)
 
 Similarly, with NMF, generic terms such as "today", and "end” appeared frequently in the top terms of Topics 5, which provided no significant insights into specific themes.
 
 *Top terms for topic 0 and 1 by BERTopic*
+
 ![Top terms for topic 0 and 1 by BERTopic](./readme_pic/top_term_BERT.png)
 
 On the other hand, BERTopic performed significantly better. While there were still some generic terms present in the top terms, they were far fewer compared to LDA and NMF and generally had lower weights. For example, in the top terms for Topic 0 and 1, we observed that the five terms were thematically coherent and clearly represented related themes, making BERTopic the superior approach for our analysis.
