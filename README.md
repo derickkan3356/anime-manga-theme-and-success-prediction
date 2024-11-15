@@ -35,6 +35,7 @@
 - [Discussion](#discussion)
     - [Supervised Learning](#supervised-learning-1)
     - [Unsupervised Learning](#unsupervised-learning-1)
+- [Repository Overview](#repository-overview)
 
 ## Introduction
 The main problem we are attempting to solve is twofold: (1) to derive a **single thematic label** for each anime and manga title based on the title and synopsis using **unsupervised learning** techniques, and (2) to **understand the factors** that contribute to the success of these titles by **predicting the user-rated scores** on [MyAnimeList](https://myanimelist.net/). By solving these problems, we hope to provide a general framework for understanding how thematic content influences user engagement and success metrics in creative industries. This approach could be applied to various domains beyond anime and manga, helping content creators, marketers, and platform owners make data-driven decisions to better align with audience preferences and improve content development.
@@ -303,7 +304,7 @@ One of the main challenges we faced was manually interpreting the topics derived
 
 To further improve the robustness of our topic modeling results, an important area of focus should be reducing the sensitivity and randomness inherent in the current approach. The topic modeling results were sometimes unstable, heavily influenced by the random initialization of models. Future work could involve employing ensemble approaches that aggregate the outcomes of multiple runs, thereby reducing the variability of the themes produced. Additionally, methods such as consensus clustering could be explored to ensure more stable and reproducible results. Reducing this randomness would ultimately make the derived themes more reliable and applicable for downstream analyses.
 
-## Repository notes
+## Repository Overview
 This repository contains three Jupyter notebooks:
 
 - `data_preprocessing.ipynb`: Handles the initial data cleaning, transformation, and feature engineering.
