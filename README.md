@@ -83,8 +83,8 @@ Additionally, we extracted author names from dictionaries into strings. For exam
 After all the above processing, 24,309 entries are left. Below is a summary of the resulting dataset's columns:
 - Text columns: `title_english`, `title_japanese`, `synopsis`
 - Numerical columns: `score`, `score_by`, `episodes/chapters`, `members`, `favorites`
-- Single-label category columns: `type¸` `status`, `source`
-- Multi-label category: `genres`, `themes`, `demographics`, `creators`, `production_source`
+- Single-label categorical columns: `type¸` `status`, `source`
+- Multi-label categorical columns: `genres`, `themes`, `demographics`, `creators`, `production_source`
 - Boolean columns: `sfw`, `is_anime`
 
 ### Data Splitting
@@ -245,7 +245,7 @@ This figure presents the SHAP summary plot, which provides a comprehensive visua
 
 - **Creators:** Creators is the most influential feature in the model, despite being a multi-categorical variable with numerous unique values, making it harder to interpret directly. Its high importance suggests that the reputation, skills, or popularity of the creators play a significant role in shaping user perceptions and ratings. This finding emphasizes the critical role of creative talent in the success of anime and manga titles.
 
-- **Status Feature:** Status emerges as second most important factors. Titles with an unknown status (depicted by the red points, which represent higher feature values) tend to have a highly negative association with user scores. This suggests that when the status of an anime or manga is unclear, users may perceive it less favorably, possibly due to concerns about its completeness or quality.
+- **Status:** Status emerges as second most important factors. Titles with an unknown status (depicted by the red points, which represent higher feature values) tend to have a highly negative association with user scores. This suggests that when the status of an anime or manga is unclear, users may perceive it less favorably, possibly due to concerns about its completeness or quality.
 
 - **Popularity Features:** The features favorites, members, and scored_by are highly influential, with a generally positive impact on user scores. These features, which are directly related to the popularity of a title, indicate that higher popularity often corresponds to higher user ratings. Popular titles tend to be well-received, perhaps benefiting from a broader fan base and higher levels of engagement.
 
@@ -302,3 +302,14 @@ The unsupervised learning portion of the project provided insightful findings re
 One of the main challenges we faced was manually interpreting the topics derived from the models and ensuring the cluster results were meaningful. This process was often subjective and required significant domain knowledge to identify coherent themes. To overcome this, we iteratively refined our custom stop-word lists and experimented with different topic modeling configurations until the clusters began to make intuitive sense.
 
 To further improve the robustness of our topic modeling results, an important area of focus should be reducing the sensitivity and randomness inherent in the current approach. The topic modeling results were sometimes unstable, heavily influenced by the random initialization of models. Future work could involve employing ensemble approaches that aggregate the outcomes of multiple runs, thereby reducing the variability of the themes produced. Additionally, methods such as consensus clustering could be explored to ensure more stable and reproducible results. Reducing this randomness would ultimately make the derived themes more reliable and applicable for downstream analyses.
+
+## Repository notes
+This repository contains three Jupyter notebooks:
+
+- `data_preprocessing.ipynb`: Handles the initial data cleaning, transformation, and feature engineering.
+- `nlp_and_topic_modeling.ipynb`: Implements natural language processing and topic modeling techniques to derive meaningful themes from anime and manga titles.
+- `deep_learning.ipynb`: Contains the supervised learning models used to predict user scores, including the pre-processing, architecture and training process of a deep learning model.
+
+Intermediate outputs generated from each notebook are saved in the `assets` folder in `.joblib` format for convenient reuse across notebooks. The original data source is also stored in the `assets` folder in `.csv` format.
+
+To replicate the analysis, please ensure that you install all necessary libraries by running `pip install -r requirements.txt`. Note that some randomness is involved in certain steps, especially in the topic modeling and deep learning training processes, which means your results may not exactly match the ones reported in the documentation.
